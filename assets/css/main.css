@@ -1,0 +1,133 @@
+/*
+Paleta de colores para index.html
+#4477AE
+#30517A
+#A7C0DE
+#4678AD
+#31547C
+*/
+
+html{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    max-width: 960px;
+    height: 80vh;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 3px 6px #000;
+    border-radius: 5px;
+    position: relative;
+    padding: 1.8em;
+    overflow: scroll;
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #30517a;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.webpage{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 2em;
+    display: inline-block;
+}
+
+.main_image{
+    float: left;        
+    margin-right: 1em; 
+    height: 250px;
+}
+
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 200;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th{
+    padding: 1em;
+    text-align: left;
+}
+
+.table tr:nth-child(even){
+    background-color: #A7C0DE;
+}
+
+.fa-star{
+    color: #ffc400 ;
+}
+
+.title-item{
+    /*border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #30517A ;*/
+    padding-bottom : 1em;
+    border-bottom: solid 2px #30517a;
+    font-size: 2em;
+}
+
+.position{
+    background-color: #30517a;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 0.5em;
+}
+
+@media (min-height:550px){
+   .content{
+       height: 500px;
+   } 
+}
+
+body{
+    background-color:black;
+    color: black;
+}
