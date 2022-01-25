@@ -1,25 +1,29 @@
-console.log("Hola mundo desde un archivo externo¡¡")
+let links = document.querySelectorAll(".close");
 
-//represenracion del DOM
-//query selector solo puede seleccionar el primer elemento o selector
-let table = document.querySelector(".table");
-console.log(table);
-
-//querySelectorAll puede seleccionar todos los elementos para luego recorrerlos con
-//forEach que recibe una funcion y despues los imprimimos
-let links = document.querySelectorAll("a");
 links.forEach(function(link){
-    console.log(link);
-});
+    link.addEventListener("click",function(ev){
+        ev.preventDefault();
+        let content = document.querySelector(".content");
+        content.classList.remove("animate__fadeInDown");
+        content.classList.remove("animate__animated");
 
-console.log(links); 
+        content.classList.add("animate__fadeOutUp");
+        content.classList.add("animate__animated");
 
-let celdas = document.querySelectorAll("td");
-celdas.forEach(function(td){
-    td.addEventListener('click', function(){
-        console.log("XXXXXXXXXXXXXXXXXXXXD");
+        setTimeout(function(){
+            location.href = "/";
+        },601);
+
+        return false
     })
-});
 
+})
+
+
+    
+    
+
+    
+ 
 
 
